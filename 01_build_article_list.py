@@ -7,7 +7,7 @@ import pandas as pd
 
 DATA_DIR = Path("data")
 BASE_URL = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
-FIELDS = ['uid', 'title', 'pubdate', 'source']
+FIELDS = ['uid', 'title', 'pubdate', 'source', 'sortdate']
 JOURNALS = {
     'jamia_open': "JAMIA Open",
     'jamia': "J Am Med Inform Assoc",
