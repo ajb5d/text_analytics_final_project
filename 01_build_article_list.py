@@ -11,7 +11,7 @@ FIELDS = ['uid', 'title', 'pubdate', 'source', 'sortdate']
 JOURNALS = {
     'jamia_open': "JAMIA Open",
     'jamia': "J Am Med Inform Assoc",
-    'aci': "Appl Clin Inform",
+    # 'aci': "Appl Clin Inform",
 }
 CHUNK_SIZE = 500
 
