@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 import pandas as pd
 import sqlite3
-from tqdm import tqdm
 import numpy as np
 
 db = sqlite3.connect("data/corpus_f3.sqlite")
