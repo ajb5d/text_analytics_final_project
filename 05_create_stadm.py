@@ -31,6 +31,7 @@ TERM["p_stem"] = TERM.term_str.apply(stemmer.stem)
 TERM['is_stopword'] = TERM['term_str'].isin(stop_words)
 TERM["is_num"] = TERM['term_str'].str.match("\d+")
 TERM['is_punctuation'] = TERM['term_str'].str.match("\W+")
+TERM['is_number'] = TERM['term_str'].str.match("\d+")
 
 token_str = []
 term_str = []
