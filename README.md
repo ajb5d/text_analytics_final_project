@@ -8,4 +8,4 @@
 
 1. `04_parse_articles.py` converts the F0 documents into F1 (paragraphs, sentences, words) tables in the `data/corpus_f1.sqlite` sqlite database
 
-
+1. `05_create_stadm.py` takes the F1 corpus, transforms it into F2, and annotates it (F3). The F2 and F3 results are saved into sqlite files.
