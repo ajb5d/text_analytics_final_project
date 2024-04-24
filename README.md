@@ -11,3 +11,5 @@
 1. `05_create_stadm.py` takes the F1 corpus, transforms it into F2, and annotates it (F3). The F2 and F3 results are saved into sqlite files.
 
 1. `06_add_tfidf.py` computes TF-IDF on the F3 corpus and annotates the TOKEN and TERM tables to create a F4 corpus saved into `data/corpus_f4.sqlite`
+
+1. `07_create_topic_models.py` computes document level PCA vectors and LDA based topic models
