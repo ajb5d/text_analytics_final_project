@@ -55,8 +55,8 @@ small_pca_result = pd.DataFrame(
     pca.fit_transform(SMALL_TFIDF),
     index = SMALL_TFIDF.index
 )
-big_pca_result.to_parquet("../data/corpus_f5_pca.parquet")
-small_pca_result.to_parquet("../data/corpus_f5_small_pca.parquet")
+big_pca_result.to_parquet("data/corpus_f5_pca.parquet")
+small_pca_result.to_parquet("data/corpus_f5_small_pca.parquet")
 
 DOCUMENT_CORPUS = (
     TOKENS[TOKENS['term_id'].isin(small_tfidf_terms)]
@@ -76,5 +76,5 @@ THETA = pd.DataFrame(lda_pipeline.transform(DOCUMENT_CORPUS["term_str"]), index=
 PHI = pd.DataFrame(lda_pipeline.steps[1][1].components_, columns=lda_pipeline.steps[0][1].get_feature_names_out())
 
 PHI.index.name = "topic_id"
-THETA.to_parquet("../data/corpus_f5_theta.parquet")
-PHI.to_parquet("../data/corpus_f5_phi.parquet")
+THETA.to_parquet("data/corpus_f5_theta.parquet")
+PHI.to_parquet("data/corpus_f5_phi.parquet")
