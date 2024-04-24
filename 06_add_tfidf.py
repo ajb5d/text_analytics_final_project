@@ -87,3 +87,6 @@ TOKENS.to_sql("tokens", dbout, if_exists='replace', index=False)
 TERMS.to_sql("terms", dbout, if_exists='replace')
 dbout.commit()
 dbout.close()
+
+## This has too many columns for sqlite
+TFIDF.to_parquet("data/corpus_f4_tfidf.parquet")
