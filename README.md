@@ -1,3 +1,5 @@
+This source is available at https://github.com/ajb5d/text_analytics_final_project
+
 # Steps
 
 1. `01_build_article_list.py` uses the [NCBI Entrez APIs](https://www.ncbi.nlm.nih.gov/books/NBK25501/) to build a list of articles from candidate journals that are available in [Pub Med Central](https://www.ncbi.nlm.nih.gov/pmc/). 
@@ -17,3 +19,8 @@
 1. `08_create_word_embeddings.py` computes word2vec embeddings for the entire corpus.
 
 # Explorations
+
+* `00_baseline_eda.ipynb` basic statistics about the coropus
+* `01_tfidf_pca.ipynb` explorations of TF-IDF based features
+* `02_topic_models.ipynb` visualizations of topic models
+* `03_word_embeddings.ipynb` word2vec embeddings of the corpus
