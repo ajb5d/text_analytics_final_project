@@ -51,10 +51,17 @@ big_pca_result = pd.DataFrame(
     index = TFIDF.index
 )
 
+with open("data/corpus_f5_pca_result.txt", "w") as f:
+    f.write(str(pca.steps[2][1].explained_variance_ratio_))
+
 small_pca_result = pd.DataFrame(
     pca.fit_transform(SMALL_TFIDF),
     index = SMALL_TFIDF.index
 )
+
+with open("data/corpus_f5_small_pca_result.txt", "w") as f:
+    f.write(str(pca.steps[2][1].explained_variance_ratio_))
+
 big_pca_result.to_parquet("data/corpus_f5_pca.parquet")
 small_pca_result.to_parquet("data/corpus_f5_small_pca.parquet")
 

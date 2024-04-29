@@ -15,3 +15,5 @@
 1. `07_create_topic_models.py` computes document level PCA vectors and LDA based topic models.
 
 1. `08_create_word_embeddings.py` computes word2vec embeddings for the entire corpus.
+
+# Explorations
