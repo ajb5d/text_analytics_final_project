@@ -1,5 +1,16 @@
 This source is available at https://github.com/ajb5d/text_analytics_final_project
 
+The processed data is available at https://virginia.box.com/s/3ejoovqm72vc64trwk9fa8a3aqt4szut
+
+# Data Manifest
+Provenance: These documents came from articles deposited from two journals (JAMIA and ACI) into the [Pub Med Central](https://www.ncbi.nlm.nih.gov/pmc/) archive.
+
+Location: [UVA Box](https://virginia.box.com/s/a23iqqcla8q8fi5ek8g8gqjsnqcivsa7)
+
+Description: This is a collection of articles about clinical informatics from two journals (JAMIA and ACI)
+
+Format: XML in the 'Journal Archiving and Interchange DTD'
+
 # Steps
 
 1. `01_build_article_list.py` uses the [NCBI Entrez APIs](https://www.ncbi.nlm.nih.gov/books/NBK25501/) to build a list of articles from candidate journals that are available in [Pub Med Central](https://www.ncbi.nlm.nih.gov/pmc/). 
